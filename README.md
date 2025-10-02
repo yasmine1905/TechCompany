@@ -1,3 +1,4 @@
+´´´sql 
 # sqlAssignment 1
 
 USE tech_company;
@@ -195,3 +196,4 @@ INNER JOIN employees_leaders el
 INNER JOIN leaders l
   ON el.leader_number = l.leader_number
 ORDER BY leader, employee;
+´´´
