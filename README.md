@@ -1,7 +1,4 @@
 
-👉 Når du lægger det i din README.md på GitHub, bliver alt inde i blokken farvekodet som SQL.  
-
-Her er dit hele script pakket korrekt ind:  
 
 ```sql
 USE tech_company;
