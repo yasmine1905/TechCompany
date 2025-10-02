@@ -144,7 +144,7 @@ FROM employees;
 JOIN ASSIGNMENTS
  ********************************************************************/
 
--- 1) INNER JOIN: medarbejdere + deres afdelingsnavn.
+-- 1) INNER JOIN: medarbejdere + deres afdelingsnavn
 -- Kun rækker hvor employee.department_number matcher en department
 SELECT *
 FROM employees e
@@ -170,7 +170,7 @@ ORDER BY e.employee_name;
 -- 4) Overvej nedenstående query (INNER JOIN + COUNT pr. department_name)
 -- Hvilken afdeling mangler og hvorfor?
 -- 'OPERATIONS' (dept 40) mangler, fordi der ikke er ansatte i den afdeling
--- INNER JOIN viser kun rækker hvor der findes match i employees.
+-- INNER JOIN viser kun rækker hvor der findes match i employees
 SELECT d.department_name, COUNT(e.employee_number) AS cnt
 FROM employees e
 JOIN departments d
@@ -194,7 +194,7 @@ ORDER BY d.department_name;
 -- ORDER BY employee.employee_name;
 
 -- Tabellen employees bruges to gange: som 'employee' (den ansatte) og 'manager' (lederen)
--- Join-betingelsen matcher employee.manager_id med manager.employee_number.
+-- Join-betingelsen matcher employee.manager_id med manager.employee_number
 -- Resultatet er alle ansatte som har en manager registreret, og viser alle kolonner fra begge aliaser
 -- ORDER BY sorterer på medarbejderens navn.
 
